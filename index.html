@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ec">
+  <meta name="description" content="Nǐ haǒ IRL — a little Chinese, a whole new world. A playful new language-learning adventure starts with hello.">
+  <title>Nǐ haǒ IRL — A little Chinese. A whole new world.</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="intro" id="intro" hidden role="dialog" aria-modal="true" aria-label="Welcome to Nǐ haǒ IRL">
+    <div class="intro-top"><span>A NEW WORLD STARTS WITH</span><button id="skip-intro" class="intro-skip">Skip intro <span aria-hidden="true">↗</span></button></div>
+    <div class="intro-grid" aria-hidden="true"></div>
+    <div class="intro-hanzi" aria-hidden="true"><span>你</span><span>好</span><i>!</i></div>
+    <div class="intro-brand" aria-hidden="true"><span>Nǐ</span> <span>haǒ</span> <span class="intro-irl">IRL<span class="intro-dot">.</span></span></div>
+    <div class="intro-orbit" aria-hidden="true">✳</div>
+    <div class="intro-wipe" aria-hidden="true"></div>
+    <div class="intro-bottom"><span>LESSONS CAN WAIT. SAY HELLO.</span><div class="intro-progress"><span></span></div><span>你好，世界</span></div>
+  </div>
+
+  <div id="site">
+    <header class="header">
+      <a class="logo" href="#" aria-label="Nǐ haǒ IRL home"><span class="logo-mark" aria-hidden="true"><i></i><i></i><b></b></span><span>Nǐ haǒ <strong>IRL</strong></span></a>
+      <nav aria-label="Main navigation"><a href="#the-vibe">The vibe</a><a href="#say-hello">Your first hello</a></nav>
+      <div class="header-controls"><button id="motion-toggle" class="motion-toggle" aria-pressed="false" aria-label="Pause background motion" title="Pause background motion"><span aria-hidden="true">Ⅱ</span></button><button class="replay-button" data-replay><span aria-hidden="true">↻</span> Replay intro</button></div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> A LITTLE CHINESE. A WHOLE NEW WORLD.</div>
+          <h1 id="hero-title"><span class="hello-line">Nǐ haǒ</span><span class="irl-line">IRL<span class="period">.</span><span class="hello-sticker" aria-hidden="true">你好!<small>THAT’S HELLO.</small></span></span></h1>
+          <p class="hero-description">Less textbook. More main-character energy.<br>Meet Chinese through little moments of play.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#say-hello">Say your first hello <span aria-hidden="true">↗</span></a><button class="text-button" data-replay><span class="play-icon" aria-hidden="true">▶</span> Watch the intro</button></div>
+          <div class="hero-note"><span class="tiny-star" aria-hidden="true">✳</span> Big adventures. Small beginnings.</div>
+        </div>
+
+        <div class="character-world" id="character-world" aria-label="An animated playground of Chinese characters">
+          <div class="world-grid" aria-hidden="true"></div>
+          <div class="world-top"><span><i></i> THE HELLO CLUB</span><span>001 / 无限可能</span></div>
+          <div class="orbital-ring" aria-hidden="true"></div>
+          <span class="world-spark spark-one" aria-hidden="true">✳</span><span class="world-spark spark-two" aria-hidden="true">✦</span>
+          <div class="floating-label label-one" aria-hidden="true">a little courage ↘</div>
+          <button class="character-tile tile-ni" data-character="ni" aria-label="Discover 你, nǐ, meaning you"><span class="tile-index" aria-hidden="true">01 / YOU</span><span lang="zh-Hans" class="hanzi">你</span><span class="tile-pinyin">nǐ <span aria-hidden="true">↗</span></span></button>
+          <button class="character-tile tile-hao" data-character="hao" aria-label="Discover 好, hǎo, meaning good"><span class="tile-index" aria-hidden="true">02 / GOOD</span><span lang="zh-Hans" class="hanzi">好</span><span class="tile-pinyin">hǎo <span aria-hidden="true">↗</span></span></button>
+          <div class="world-caption" id="world-caption" aria-live="polite"><span class="caption-dot"></span> put them together. make a connection.</div>
+          <div class="hello-bubble" aria-hidden="true">hello,<br>new world<span>♡</span></div>
+          <svg class="world-arrow" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M12 13C56 2 80 22 69 50C62 69 38 57 45 43C54 24 90 47 83 84M70 73L84 88L96 71" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="world-bottom"><span>HOVER. TAP. GET CURIOUS.</span><span class="world-coordinate">35° N / 105° E</span></div>
+        </div>
+        <a class="scroll-cue" href="#the-vibe"><span aria-hidden="true">↓</span> GOOD THINGS AHEAD</a>
+      </section>
+
+      <div class="word-ribbon" aria-label="Real words. Little wins. A world of possibilities."><div class="ribbon-track" aria-hidden="true"><span>REAL WORDS</span><i>✳</i><span>LITTLE WINS</span><i>✳</i><span>大大的可能</span><i>✳</i><span>BIG POSSIBILITIES</span><i>✳</i><span>REAL WORDS</span><i>✳</i><span>LITTLE WINS</span><i>✳</i><span>大大的可能</span><i>✳</i><span>BIG POSSIBILITIES</span><i>✳</i></div></div>
+
+      <section class="vibe section-wrap" id="the-vibe" aria-labelledby="vibe-title">
+        <div class="vibe-heading reveal"><div class="eyebrow">THE VIBE / 玩着学</div><h2 id="vibe-title">A language.<br>A playground.<br><span class="muted">Your kind of thing.</span></h2><p>For the curious. The “just one more” crowd.<br>And anyone who’s ever wanted to say more.</p><span class="scribble-star" aria-hidden="true">✳</span></div>
+        <div class="vibe-list">
+          <article class="vibe-item reveal"><span class="item-number">01</span><div><h3>Play a little.</h3><p>Quick quizzes and playful challenges are on the horizon. A little curiosity will go a long way.</p></div><span class="vibe-symbol symbol-orange" lang="zh-Hans" aria-hidden="true">玩</span></article>
+          <article class="vibe-item reveal"><span class="item-number">02</span><div><h3>Make it click.</h3><p>Characters, sounds, and everyday phrases. Small discoveries that start to feel familiar.</p></div><span class="vibe-symbol symbol-lime" lang="zh-Hans" aria-hidden="true">懂</span></article>
+          <article class="vibe-item reveal"><span class="item-number">03</span><div><h3>Take it IRL.</h3><p>A hello to someone new. Your next food order. Words that belong in your world.</p></div><span class="vibe-symbol symbol-blue" lang="zh-Hans" aria-hidden="true">走</span></article>
+          <div class="coming-note reveal"><span class="status-dot"></span> THE LEARNING ADVENTURE IS IN THE MAKING.</div>
+        </div>
+      </section>
+
+      <section class="hello-section section-wrap" id="say-hello" aria-labelledby="hello-title">
+        <div class="hello-copy reveal"><div class="eyebrow">YOUR FIRST LITTLE WIN</div><h2 id="hello-title">Every adventure<br>starts with <em>hello.</em></h2><p>No pressure. No perfect pronunciation required.<br>Just a few words to open a door.</p><div class="phrase-tabs" role="tablist" aria-label="Choose a Chinese phrase"><button role="tab" id="tab-hello" aria-selected="true" aria-controls="phrase-panel" data-phrase="hello">Say hello</button><button role="tab" id="tab-thanks" aria-selected="false" aria-controls="phrase-panel" data-phrase="thanks" tabindex="-1">Be kind</button><button role="tab" id="tab-go" aria-selected="false" aria-controls="phrase-panel" data-phrase="go" tabindex="-1">Let’s go</button></div><p class="preview-note">A tiny taste of what’s to come. Full lessons arrive later.</p></div>
+        <div class="phrase-card reveal" role="tabpanel" id="phrase-panel" aria-labelledby="tab-hello" tabindex="0"><div class="phrase-top"><span>POCKET PHRASE <span id="phrase-number">001</span></span><span aria-hidden="true">✦</span></div><div class="phrase-content"><div class="phrase-hanzi" id="phrase-hanzi" lang="zh-Hans">你好</div><div class="phrase-pinyin" id="phrase-pinyin">nǐ hǎo</div><div class="phrase-meaning" id="phrase-meaning">Hello. A small word with big possibilities.</div></div><div class="phrase-bottom"><span id="phrase-context">FOR EVERY NEW BEGINNING</span><button id="hear-phrase" aria-label="Hear the Chinese phrase"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4V5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M15 8a6 6 0 010 8m3-11a10 10 0 010 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span>Hear it</span></button></div><p class="audio-status" id="audio-status" aria-live="polite"></p></div>
+      </section>
+
+      <section class="closing section-wrap reveal"><div class="closing-label"><span class="status-dot"></span> THIS IS ONLY THE BEGINNING.</div><p>New words.<br><span>New worlds.</span></p><button class="button button-lime" data-replay>One more hello? <span aria-hidden="true">↻</span></button><span class="closing-hanzi" aria-hidden="true">好</span></section>
+    </main>
+    <footer class="footer section-wrap"><a class="logo" href="#"><span class="logo-mark" aria-hidden="true"><i></i><i></i><b></b></span><span>Nǐ haǒ <strong>IRL</strong></span></a><span>A little Chinese. A lot of possibility.</span><a href="#main">BACK TO TOP <span aria-hidden="true">↑</span></a></footer>
+  </div>
+</body>
+</html>
